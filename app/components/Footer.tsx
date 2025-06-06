@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="https://github.com/mfbaltaza/transformative-stack" className="hover:text-white transition-colors">
-                  GitHub
+                  <Link to="https://github.com/mfbaltaza/transformative-stack/tree/main">View on GitHub</Link>
                 </a>
               </li>
               <li>
