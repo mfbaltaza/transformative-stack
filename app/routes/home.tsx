@@ -14,10 +14,19 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
 	return await res.json();
 }
 
+export function HydrateFallback() {
+	return (
+		<div className="min-h-screen">
+			<Hero mocks_enabled={false} />
+			<Footer />
+		</div>
+	);
+}
+
 export default function Home({ loaderData }: Route.ComponentProps) {
 	return (
 		<div className="min-h-screen">
-			<Hero />
+			<Hero mocks_enabled={typeof loaderData === "object"} />
 			<Footer />
 		</div>
 	);
