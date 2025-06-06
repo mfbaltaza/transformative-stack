@@ -2,7 +2,6 @@
 /node_modules/
 .env
 .env.local
-.env.example
 
 # React Router
 /.react-router/

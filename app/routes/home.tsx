@@ -11,7 +11,7 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function clientLoader({ params }: Route.ClientLoaderArgs) {
-	if (import.meta.env.VITE_ENVIRONMENT === "local") {
+	if (process.env.NODE_ENV === "development") {
 		const res = await fetch("https://api.transformative.com/user");
 		return await res.json();
 	}
