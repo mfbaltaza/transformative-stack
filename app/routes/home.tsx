@@ -11,8 +11,11 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export async function clientLoader({ params }: Route.ClientLoaderArgs) {
-	const res = await fetch("https://api.transformative.com/user");
-	return await res.json();
+	if (import.meta.env.VITE_ENVIRONMENT === "local") {
+		const res = await fetch("https://api.transformative.com/user");
+		return await res.json();
+	}
+	return null;
 }
 
 export function HydrateFallback() {
@@ -27,7 +30,7 @@ export function HydrateFallback() {
 export default function Home({ loaderData }: Route.ComponentProps) {
 	return (
 		<div className="min-h-screen">
-			<Hero mocks_enabled={typeof loaderData === "object"} />
+			<Hero mocks_enabled={loaderData !== null} />
 			<Footer />
 		</div>
 	);
