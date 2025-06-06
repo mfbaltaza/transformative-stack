@@ -16,7 +16,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="align-items-end">
+          <div className="col-start-4">
             <h4 className="font-semibold mb-4 text-gray-200">Resources</h4>
             <ul className="space-y-4 text-gray-400">
               <li>
