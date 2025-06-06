@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -15,54 +16,20 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
+          <div className="col-start-4">
             <h4 className="font-semibold mb-4 text-gray-200">Resources</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-4 text-gray-400">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Documentation
-                </a>
+               <Link to="https://reactrouter.com/start/framework/installation" className="hover:text-white transition-colors">Documentation</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Examples
-                </a>
+                <Link to="https://www.robinwieruch.de/react-router/" className="hover:text-white transition-colors">Examples</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Tutorials
-                </a>
+                <Link to="https://www.robinwieruch.de/react-router/" className="hover:text-white transition-colors">Tutorials</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4 text-gray-200">Community</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Discord
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Stack Overflow
-                </a>
+                <Link to="https://reactrouter.com/" className="hover:text-white transition-colors">Blog</Link>
               </li>
             </ul>
           </div>
