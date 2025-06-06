@@ -13,11 +13,13 @@
     "@react-router/serve": "^7.5.3",
     "isbot": "^5.1.27",
     "lucide-react": "^0.513.0",
+    "radix-ui": "^1.4.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.5.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@react-router/dev": "^7.5.3",
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
