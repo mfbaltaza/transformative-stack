@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-16 border-t border-gray-800/50">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-x-96 mb-12">
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-white via-gray-200 to-gray-300 bg-clip-text text-transparent">
               Transformative
@@ -16,52 +16,20 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
+          <div className="align-items-end">
             <h4 className="font-semibold mb-4 text-gray-200">Resources</h4>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-4 text-gray-400">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Documentation
-                </a>
+               <Link to="https://reactrouter.com/start/framework/installation" className="hover:text-white transition-colors">Documentation</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Examples
-                </a>
+                <Link to="https://www.robinwieruch.de/react-router/" className="hover:text-white transition-colors">Examples</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Tutorials
-                </a>
+                <Link to="https://www.robinwieruch.de/react-router/" className="hover:text-white transition-colors">Tutorials</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4 text-gray-200">Community</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Discord
-                </a>
-              </li>
-              <li>
-                  <Link to="https://github.com/mfbaltaza/transformative-stack/tree/main" className="hover:text-white transition-colors">View on GitHub</Link>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Stack Overflow
-                </a>
+                <Link to="https://reactrouter.com/" className="hover:text-white transition-colors">Blog</Link>
               </li>
             </ul>
           </div>
