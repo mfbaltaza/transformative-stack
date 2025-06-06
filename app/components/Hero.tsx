@@ -1,5 +1,6 @@
 
 import { ArrowRight, Code, Zap } from "lucide-react";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -36,8 +37,8 @@ const Hero = () => {
             <button 
               className="bg-gray-800/60 border-gray-600/50 text-gray-200 hover:bg-gray-700/60 hover:text-white px-8 py-4 text-lg rounded-2xl backdrop-blur-sm shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),0_1px_3px_0_rgba(0,0,0,0.8),0_1px_2px_0_rgba(0,0,0,0.9)] hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_2px_6px_0_rgba(0,0,0,0.9)] flex items-center cursor-pointer"
             >
-              <Code className="mr-2 w-5 h-5" />
-              View on GitHub
+              <Code className="mr-2 w-5 h-5" href="https://github.com/mfbaltaza/transformative-stack/tree/main" />
+              <Link to="https://github.com/mfbaltaza/transformative-stack/tree/main">View on GitHub</Link>
             </button>
           </div>
         </div>
