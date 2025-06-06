@@ -9,7 +9,12 @@ export function meta({}: Route.MetaArgs) {
 	];
 }
 
-export default function Home() {
+export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+	const res = await fetch("https://api.transformative.com/user");
+	return await res.json();
+}
+
+export default function Home({ loaderData }: Route.ComponentProps) {
 	return (
 		<div className="min-h-screen">
 			<Hero />
