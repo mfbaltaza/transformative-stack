@@ -27,14 +27,14 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
-              className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] hover:shadow-[0_12px_40px_0_rgba(0,0,0,0.5)] transition-all duration-300 transform hover:scale-105 border-0 flex items-center"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] hover:shadow-[0_12px_40px_0_rgba(0,0,0,0.5)] transition-all duration-300 transform hover:scale-105 border-0 flex items-center cursor-pointer"
             >
               Get Started
               <ArrowRight className="ml-2 w-5 h-5" />
             </button>
             
             <button 
-              className="bg-gray-800/60 border-gray-600/50 text-gray-200 hover:bg-gray-700/60 hover:text-white px-8 py-4 text-lg rounded-2xl backdrop-blur-sm shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),0_1px_3px_0_rgba(0,0,0,0.8),0_1px_2px_0_rgba(0,0,0,0.9)] hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_2px_6px_0_rgba(0,0,0,0.9)] flex items-center"
+              className="bg-gray-800/60 border-gray-600/50 text-gray-200 hover:bg-gray-700/60 hover:text-white px-8 py-4 text-lg rounded-2xl backdrop-blur-sm shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1),0_1px_3px_0_rgba(0,0,0,0.8),0_1px_2px_0_rgba(0,0,0,0.9)] hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_2px_6px_0_rgba(0,0,0,0.9)] flex items-center cursor-pointer"
             >
               <Code className="mr-2 w-5 h-5" />
               View on GitHub
