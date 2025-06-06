@@ -20,16 +20,16 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-gray-200">Resources</h4>
             <ul className="space-y-4 text-gray-400">
               <li>
-               <a href="https://reactrouter.com/start/framework/installation" className="hover:text-white transition-colors">Documentation</a>
+               <a href="https://reactrouter.com/start/framework/installation" target="_blank" className="hover:text-white transition-colors">Documentation</a>
               </li>
               <li>
-                <a href="https://www.robinwieruch.de/react-router/" className="hover:text-white transition-colors">Examples</a>
+                <a href="https://www.robinwieruch.de/react-router/" target="_blank" className="hover:text-white transition-colors">Examples</a>
               </li>
               <li>
-                <a href="https://www.robinwieruch.de/react-router/" className="hover:text-white transition-colors">Tutorials</a>
+                <a href="https://www.robinwieruch.de/react-router/" target="_blank" className="hover:text-white transition-colors">Tutorials</a>
               </li>
               <li>
-                <a href="https://reactrouter.com/" className="hover:text-white transition-colors">Blog</a>
+                <a href="https://reactrouter.com/" target="_blank" className="hover:text-white transition-colors">Blog</a>
               </li>
             </ul>
           </div>
