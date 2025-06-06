@@ -51,7 +51,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/mfbaltaza/transformative-stack" className="hover:text-white transition-colors">
+                <a className="hover:text-white transition-colors">
                   <Link to="https://github.com/mfbaltaza/transformative-stack/tree/main">View on GitHub</Link>
                 </a>
               </li>
